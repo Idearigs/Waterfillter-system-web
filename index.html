@@ -90,7 +90,6 @@
               <h1 class="title">
                 Purifying Water, Enhancing Lives in Every Maldivian Home
               </h1>
-
               <p class="subtitle">
                 At RETAW Solutions, we provide the Maldives with top-tier, reliable water purification services. Trusted for exceptional quality and island-wide reach, we bring innovative solutions that deliver safe, clean water no matter where you live.
               </p>
@@ -101,13 +100,62 @@
           </div>
         </div>
         <div class="col-lg-4 order-first order-lg-last">
-          <div class="right-img">
-            <img class="img-fluid img" src="assets/images/w4.png" alt="">
-          </div>
+          <!-- Shadow Under Product Image -->
+          <div class="shadow-circle "></div>
+          <!-- Product Image -->
+          <img class="img-fluid img" src="assets/images/w4.png" alt="Watch">
         </div>
       </div>
     </div>
   </div>
+  <style>
+    /* Shadow Circle */
+    .shadow-circle {
+      position: absolute;
+      top: 79%;
+      left: 55%;
+      transform: translate(-50%, 50%);
+      width: 240px; /* Initial shadow width */
+      height: 50px; /* Initial shadow height */
+      background-color: rgba(109, 108, 108, 0.199); /* Black with opacity for soft shadow */
+      border-radius: 50%;
+      z-index: 1; /* Places it behind the image */
+      box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.20); /* Increased blur-radius for more blur */
+      animation: shadow-bounce 3s infinite ease-in-out; /* Sync shadow with image bounce */
+    } 
+  
+    /* Bouncing Image Animation */
+    @keyframes slow-bounce {
+      0%, 100% {
+        transform: translateY(0); /* Original position */
+      }
+      50% {
+        transform: translateY(-10px); /* Move up slightly */
+      }
+    }
+  
+    /* Shadow Animation */
+    @keyframes shadow-bounce {
+      0%, 100% {
+        width: 200px;
+        height: 50px;
+      }
+      50% {
+        width: 180px; /* Shrink shadow when image moves up */
+        height: 40px;
+      }
+    }
+  
+    .img-fluid {
+      position: relative;
+      animation: slow-bounce 3s infinite ease-in-out; /* Infinite smooth bounce for image */
+    }
+  </style>
+  
+  
+  
+  
+
   <!-- Hero Area End -->
 
    <!-- About Area Start -->
@@ -182,7 +230,7 @@
           <div class="box">
             <div class="inner-box">
               <div class="icon">
-                <img src="https://img.icons8.com/glyph-neue/100/228BE6/work.png" width="100px" alt="work"/>
+                <img src="https://img.icons8.com/ios-filled/100/228BE6/delivery--v1.png" width="100px" alt="work"/>
               </div>
               <h4 class="title">Direct Sales</h4>
               <p class="text">
@@ -195,7 +243,7 @@
           <div class="box">
             <div class="inner-box">
               <div class="icon">
-                <img src="https://img.icons8.com/glyph-neue/100/228BE6/work.png" width="100px" alt="work"/>
+                <img src="https://img.icons8.com/ios-filled/100/228BE6/delivery--v1.png" width="100px" alt="work"/>
               </div>
               <h4 class="title">Island-Wide Service </h4>
               <p class="text">
@@ -293,131 +341,131 @@
   <!-- Service Area start -->
   <section class="feature" id="feature">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8">
-          <div class="section-title">
-            <h2 class="title" id="newproduct">About the S1</h2>
-            <p>
-              The S1 RO Purifier delivers unmatched performance with advanced filtration, high capacity, and a sleek design, crafted specifically for Maldivian households.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-feature">
-            <div class="feature-box feature-box1">
-              <div class="feature-circle">
-                <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
-              </div>
-              <div class="details">
-                <h4>
-                  <a href="#" class="title">
-                    Advanced Filtration
-                  </a>
-                </h4>
-                <p class="text">Removes contaminants for exceptionally clean water.</p>
-              </div>
-              <div class="icon-area">
-                  <div class="icon">
-                    <i class="flaticon-heart"></i>
-                  </div>
-              </div>
-            </div>
-            <div class="feature-box feature-box2">
-              <div class="feature-circle">
-                <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
-              </div>
-              <div class="details">
-                <h4>
-                  <a href="#" class="title">High Capacity</a>
-                </h4>
-                <p class="text">Purifies up to 1,500 liters daily.</p>
-              </div>
-              <div class="icon-area">
-                  <div class="icon">
-                    <i class="flaticon-alarm"></i>
-                  </div>
-              </div>
-            </div>
-            <div class="feature-box feature-box3">
-              <div class="feature-circle">
-                <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
-              </div>
-              <div class="details">
-                <h4>
-                  <a href="#" class="title">Patented Filter</a>
-                </h4>
-                <p class="text">Unique PCT Composite Filter for enhanced purification.</p>
-              </div>
-              <div class="icon-area">
-                <div class="icon">
-                  <i class="flaticon-location"></i>
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="section-title">
+                    <h2 class="title" id="newproduct">About the S1</h2>
+                    <p>
+                        The S1 RO Purifier delivers unmatched performance with advanced filtration, high capacity, and a sleek design, crafted specifically for Maldivian households.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div class="center-feature align-self-center">
-            <img src="assets/images/w2.png" alt="">
-          </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="left-feature">
+                    <div class="feature-box feature-box1">
+                        <div class="feature-circle">
+                            <div class="feature-circle-inner"></div>
+                        </div>
+                        <div class="details">
+                            <h4>
+                                <a href="#" class="title">Advanced Filtration</a>
+                            </h4>
+                            <p class="text">Removes contaminants for exceptionally clean water.</p>
+                        </div>
+                        <div class="icon-area">
+                            <div class="icon">
+                                <img src="https://img.icons8.com/glyph-neue/100/228BE6/biosand-filter.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box2">
+                        <div class="feature-circle">
+                            <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="details">
+                            <h4>
+                                <a href="#" class="title">High Capacity</a>
+                            </h4>
+                            <p class="text">Purifies up to 1,500 liters daily.</p>
+                        </div>
+                        <div class="icon-area">
+                            <div class="icon">
+                              <img src="https://img.icons8.com/ios-filled/100/228BE6/water-cooler.png" alt=""> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box3">
+                        <div class="feature-circle">
+                            <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="details">
+                            <h4>
+                                <a href="#" class="title">Patented Filter</a>
+                            </h4>
+                            <p class="text">Unique PCT Composite Filter for enhanced purification.</p>
+                        </div>
+                        <div class="icon-area">
+                            <div class="icon">
+                              <img src="https://img.icons8.com/ios-filled/100/228BE6/certificate.png" alt=""> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="center-feature align-self-center">
+                    <img src="assets/images/w2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="right-feature">
+                    <div class="feature-box feature-box4">
+                        <div class="feature-circle">
+                            <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="icon-area">
+                            <div class="icon">
+                              <img src="https://img.icons8.com/ios-filled/100/228BE6/flash-on.png" alt=""> <!-- Energy Efficient Icon (Font Awesome) -->
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4>
+                                <a href="#" class="title">Energy Efficient</a>
+                            </h4>
+                            <p class="text">Consumes minimal power while ensuring top performance.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box5">
+                        <div class="feature-circle">
+                            <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="icon-area">
+                            <div class="icon">
+                              <img src="https://img.icons8.com/ios-filled/100/228BE6/work.png" alt=""><!-- Easy Maintenance Icon (Font Awesome) -->
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4>
+                                <a href="#" class="title">Easy Maintenance</a>
+                            </h4>
+                            <p class="text">Designed for simple filter changes and upkeep.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box feature-box6">
+                        <div class="feature-circle">
+                            <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="icon-area">
+                            <div class="icon">
+                              <img src="https://img.icons8.com/glyph-neue/100/228BE6/water-cooler.png" alt="">
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4>
+                                <a href="#" class="title">Sleek Design</a>
+                            </h4>
+                            <p class="text">Compact, modern look fits beautifully in any space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-4">
-          <div class="right-feature">
-            <div class="feature-box feature-box4">
-              <div class="feature-circle">
-                <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
-              </div>
-              <div class="icon-area">
-                <div class="icon">
-                  <i class="flaticon-bluetooth"></i>
-                </div>
-              </div>
-              <div class="details">
-                <h4>
-                  <a href="#" class="title">Energy Efficient </a>
-                </h4>
-                <p class="text">Consumes minimal power while ensuring top performance.</p>
-              </div>
-            </div>
-            <div class="feature-box feature-box5">
-              <div class="feature-circle">
-                <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
-              </div>
-              <div class="icon-area">
-                <div class="icon">
-                  <i class="flaticon-cloudy"></i>
-                </div>
-              </div>
-              <div class="details">
-                <h4>
-                  <a href="#" class="title">Easy Maintenance</a>
-                </h4>
-                <p class="text">Designed for simple filter changes and upkeep.</p>
-              </div>
-            </div>
-            <div class="feature-box feature-box6">
-              <div class="feature-circle">
-                <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
-              </div>
-              <div class="icon-area">
-                <div class="icon">
-                  <i class="flaticon-video-call"></i>
-                </div>
-              </div>
-              <div class="details">
-                <h4>
-                  <a href="#" class="title">Sleek Design</a>
-                </h4>
-                <p class="text">New had happen unable uneasy. Drawings pronounce can be followed improved out.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+
+
   <!-- Service Area End -->
 
   <!-- Deal Of the Week Start -->
@@ -1040,7 +1088,7 @@ del {
           <div class="section-title">
             <h2 class="title">Contact Us</h2>
             <p>
-              Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His secure called esteem praise.
+              Get in touch with RETAW Solutions for expert water purification services, installation, maintenance, and customer support. Our team is ready to assist you with all your water purification needs.
             </p>
           </div>
         </div>
@@ -1055,8 +1103,8 @@ del {
             </div>
             <div class="right">
               <div class="content">
-                <p>+333 123 4565 7898</p>
-                <p>+333 153 4575 7893</p>
+               
+                <p>+960 400 4664</p>
               </div>
             </div>
           </div>
@@ -1070,13 +1118,13 @@ del {
             </div>
             <div class="right">
               <div class="content">
-                <p>demoname@name.com</p>
-                <p>anothername@name.com</p>
+                <p>info@retaw.mv</p>
+                
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6"  >
           <div class="info-box box3">
             <div class="left">
               <div class="icon">
@@ -1085,7 +1133,10 @@ del {
             </div>
             <div class="right">
               <div class="content">
-                <p>140 Berkley Street, Philadelphia, Pennsylvania</p>
+                <p>R15-03 Amber Terrace,
+                  Hithigas Magu Goalhi 6
+                  Hulhumale' 23000
+                  Republic of Maldives</p>
               </div>
             </div>
           </div>
@@ -1137,8 +1188,7 @@ del {
               </a>
             </div>
             <div class="text">
-              <p>Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add
-                but. 
+              <p>RETAW Solutions, established in 2018, provides high-quality water purification services across the Maldives. Our commitment to customer satisfaction and advanced filtration technology ensures pure, clean water for every household. 
               </p>
             </div>
           </div>

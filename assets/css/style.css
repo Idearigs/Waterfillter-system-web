@@ -3713,7 +3713,7 @@ select:focus {
 .home9 .hero-area {
   position: relative;
   overflow: hidden;
-  background: #F7F9FF;
+  background: #004eff0a;
   padding: 297px 0px 220px;
 }
 .home9 .hero-area .shape {
@@ -3750,12 +3750,12 @@ select:focus {
   content: " ";
   width: 300px;
   height: 300px;
-  background: rgba(59, 38, 219, 0.1);
+  background: rgba(0, 0, 255, 0.3); /* Blue color with transparency */
   top: 50%;
   left: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 2;
   animation: b-shadow 2s linear infinite;
 }
 .home9 .hero-area .right-img .discount-circle {
