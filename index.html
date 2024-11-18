@@ -77,13 +77,11 @@
       </div>
     </div>
   </header>
-  <!-- Navebar Area End -->
-
-  <!-- Hero Area Start -->
   <div id="home" class="hero-area">
     <img class="shape" src="assets/images/bg-shape.png" alt="">
     <div class="container">
-      <div class="row justify-content-between">
+      <div class="row justify-content-center">
+        <!-- Left Content -->
         <div class="col-lg-6 d-flex align-self-center">
           <div class="left-content">
             <div class="content">
@@ -94,66 +92,173 @@
                 At RETAW Solutions, we provide the Maldives with top-tier, reliable water purification services. Trusted for exceptional quality and island-wide reach, we bring innovative solutions that deliver safe, clean water no matter where you live.
               </p>
               <div class="links">
-                <a href="#contact" class="mybtn3 mybtn-bg"><span>Contact Now</span> </a>
+                <a href="#contact" class="mybtn3 mybtn-bg"><span>Contact Now</span></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 order-first order-lg-last">
-          <!-- Shadow Under Product Image -->
-          <div class="shadow-circle "></div>
-          <!-- Product Image -->
-          <img class="img-fluid img" src="assets/images/w4.png" alt="Watch">
+        <!-- Product Image -->
+        <div class="col-lg-4 order-first order-lg-last d-flex justify-content-center">
+          <div class="product-wrapper">
+            <img class="img-fluid img" src="assets/images/w4.png" alt="Watch">
+            <div class="shadow"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  
   <style>
-    /* Shadow Circle */
-    .shadow-circle {
-      position: absolute;
-      top: 79%;
-      left: 55%;
-      transform: translate(-50%, 50%);
-      width: 240px; /* Initial shadow width */
-      height: 50px; /* Initial shadow height */
-      background-color: rgba(109, 108, 108, 0.199); /* Black with opacity for soft shadow */
-      border-radius: 50%;
-      z-index: 1; /* Places it behind the image */
-      box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.20); /* Increased blur-radius for more blur */
-      animation: shadow-bounce 3s infinite ease-in-out; /* Sync shadow with image bounce */
-    } 
+  /* General Desktop Styles */
+  .hero-area {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
   
-    /* Bouncing Image Animation */
-    @keyframes slow-bounce {
-      0%, 100% {
-        transform: translateY(0); /* Original position */
-      }
-      50% {
-        transform: translateY(-10px); /* Move up slightly */
-      }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .mybtn3 {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .mybtn3:hover {
+    background-color: #0056b3;
+  }
+  
+  .product-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+ .img-fluid {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  animation: bounce-shadow 3s infinite ease-in-out;
+}
+
+/* Adjusted Shadow */
+.shadow {
+  position: absolute;
+  bottom: -10px; /* Closer to the product */
+  background-color: rgba(0, 0, 0, 0.25); /* Slightly more visible */
+  border-radius: 50%;
+  z-index: -1;
+  width: 140px; /* Slightly smaller shadow */
+  height: 12px;
+  filter: blur(8px); /* Softer blur */
+  animation: shadow-resize 3s infinite ease-in-out;
+}
+  
+  /* Animations */
+  @keyframes bounce-shadow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Bounce upwards */
+    }
+  }
+  
+  @keyframes shadow-resize {
+    0%, 100% {
+      width: 150px;
+      height: 15px; /* Dynamic blur size */
+      filter: blur(10px);
+    }
+    50% {
+      width: 170px; /* Shadow grows as the product goes down */
+      height: 20px;
+      filter: blur(15px);
+    }
+  }
+  
+  /* Desktop Adjustments */
+  @media (min-width: 992px) {
+    .left-content {
+      margin-right: 50px; /* Add space between text and image */
     }
   
-    /* Shadow Animation */
-    @keyframes shadow-bounce {
-      0%, 100% {
-        width: 200px;
-        height: 50px;
-      }
-      50% {
-        width: 180px; /* Shrink shadow when image moves up */
-        height: 40px;
-      }
+    .product-wrapper {
+      margin-left: 50px; /* Add space between text and image */
     }
+  }
   
-    .img-fluid {
-      position: relative;
-      animation: slow-bounce 3s infinite ease-in-out; /* Infinite smooth bounce for image */
+  /* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .hero-area {
+    padding: 20px 10px;
+  }
+
+  .row {
+    flex-direction: column-reverse; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .mybtn3 {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .img-fluid {
+    max-width: 250px; /* Mobile-friendly image size */
+    margin-top: 20px;
+  }
+
+  .shadow {
+    width: 120px;
+    height: 10px; /* Smaller shadow for mobile */
+    filter: blur(8px);
+    bottom: -29px; /* Increased gap between shadow and product */
+  }
+
+  @keyframes shadow-resize {
+    0%, 100% {
+      width: 120px;
+      height: 10px;
+      filter: blur(8px);
     }
+    50% {
+      width: 140px;
+      height: 12px;
+      filter: blur(10px);
+    }
+  }
+}
   </style>
-  
-  
-  
   
 
   <!-- Hero Area End -->
@@ -1195,28 +1300,25 @@ del {
           <div class="fotter-social-links">
             <ul>
               <li>
-                <a href="#" class="facebook">
-                  <i class="fab fa-facebook-f"></i>
+                <a href="" class="">
+                 <img src="./assets/images/facebook-new-2019-seeklogo.png" alt="">
                 </a>
               </li>
               <li>
-                <a href="#" class="twitter">
-                  <i class="fab fa-twitter"></i>
+                <a href="https://x.com/retawmv" class="">
+                  <img src="./assets/images/twitter-x-seeklogo-2.svg" alt="">
+                </a>
+              </li>
+              
+           
+              <li>
+                <a href="https://www.instagram.com/retawmv/" class="">
+                  <img src="./assets/images/instagram-new-2016-seeklogo.png" alt="">
                 </a>
               </li>
               <li>
-                <a href="#" class="linkedin">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="google-plus">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="dribbble">
-                  <i class="fab fa-dribbble"></i>
+                <a href="https://www.tiktok.com/@retawmv" class="">
+                  <img src="./assets/images/tiktok-square-color-icon.svg" alt="">
                 </a>
               </li>
             </ul>
