@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- responsive -->
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 
 <body class="home9">
@@ -1364,7 +1365,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="row">
         <div class="col-lg-6">
           <div class="contact-form-wrapper">
-            <form id="contact-form" method="POST" action="contact-form-handler.php">
+            <form id="contact-form" method="POST" action="contact.php">
               <div class="row">
                 <div class="col-md-12">
                   <input type="text" class="input-field borderd" name="name" id="name" placeholder="Your Name" required>
@@ -1380,49 +1381,44 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
               </div>
             </form>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            
             <script>
-              document.getElementById('contact-form').addEventListener('submit', function (e) {
-                  e.preventDefault(); // Prevent the default form submission
-              
-                  // Get form data
-                  const formData = new FormData(this);
-              
-                  // Send data to the PHP backend using Fetch API
-                  fetch('your-backend.php', { // Replace with the path to your PHP file
-                      method: 'POST',
-                      body: formData
-                  })
-                      .then(response => response.json())
-                      .then(data => {
-                          if (data.status === 'success') {
-                              // Show success SweetAlert
-                              Swal.fire({
-                                  icon: 'success',
-                                  title: 'Success!',
-                                  text: data.message,
-                              });
-                              // Optionally reset the form
-                              document.getElementById('contact-form').reset();
-                          } else {
-                              // Show error SweetAlert
-                              Swal.fire({
-                                  icon: 'error',
-                                  title: 'Error!',
-                                  text: data.message,
-                              });
-                          }
-                      })
-                      .catch(error => {
-                          // Show network or unexpected error
-                          Swal.fire({
-                              icon: 'error',
-                              title: 'Oops...',
-                              text: 'Something went wrong! Please try again later.',
-                          });
-                          console.error('Error:', error);
-                      });
+              document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const form = event.target;
+                const formData = new FormData(form);
+            
+                fetch('contact-form-handler.php', {
+                  method: 'POST',
+                  body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                  if (data.status === 'success') {
+                    Swal.fire({
+                      icon: 'success',
+                      title: 'Message Sent',
+                      text: data.message,
+                    });
+                  } else {
+                    Swal.fire({
+                      icon: 'error',
+                      title: 'Oops...',
+                      text: data.message,
+                    });
+                  }
+                })
+                .catch(error => {
+                  Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                  });
+                });
               });
-              </script>
+            </script>
+            
               
           </div>
         </div>
