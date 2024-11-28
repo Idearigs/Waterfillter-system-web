@@ -1364,64 +1364,66 @@ document.addEventListener("DOMContentLoaded", function () {
       
       <div class="row">
         <div class="col-lg-6">
-          <div class="contact-form-wrapper">
-            <form id="contact-form" method="POST" action="contact.php">
-              <div class="row">
-                <div class="col-md-12">
-                  <input type="text" class="input-field borderd" name="name" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="email" class="input-field borderd" name="email" id="email" placeholder="Enter Your Email" required>
-                </div>
-                <div class="col-12">
-                  <textarea class="input-field borderd textarea" name="message" rows="3" id="message" placeholder="Write your message here" required></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="mybtn3 mybtn-bg"> <span>Send Message</span></button>
-                </div>
-              </div>
-            </form>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            
-            <script>
-              document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const form = event.target;
-                const formData = new FormData(form);
-            
-                fetch('contact-form-handler.php', {
-                  method: 'POST',
-                  body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                  if (data.status === 'success') {
-                    Swal.fire({
-                      icon: 'success',
-                      title: 'Message Sent',
-                      text: data.message,
+            <div class="contact-form-wrapper">
+                <form id="contact-form" method="POST" action="contact.php">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" class="input-field borderd" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="email" class="input-field borderd" name="email" id="email" placeholder="Enter Your Email" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="input-field borderd textarea" name="message" rows="3" id="message" placeholder="Write your message here" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="mybtn3 mybtn-bg"><span>Send Message</span></button>
+                        </div>
+                    </div>
+                </form>
+    
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+                <script>
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        const form = event.target;
+                        const formData = new FormData(form);
+    
+                        fetch('contact.php', {  // Ensure this points to the PHP handler (contact.php)
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.status === 'success') {
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Message Sent',
+                                    text: data.message,
+                                });
+                            } else {
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Oops...',
+                                    text: data.message,
+                                });
+                            }
+                        })
+                        .catch(error => {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                            });
+                        });
                     });
-                  } else {
-                    Swal.fire({
-                      icon: 'error',
-                      title: 'Oops...',
-                      text: data.message,
-                    });
-                  }
-                })
-                .catch(error => {
-                  Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Something went wrong!',
-                  });
-                });
-              });
-            </script>
-            
-              
-          </div>
+                </script>
+    
+            </div>
         </div>
+    </div>
+    
         <div class="col-lg-6">
           <div class="google_map_wrapper">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248.68831829921757!2d73.54233607429029!3d4.217703932924274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b3f7fc4d41028d5%3A0x5e9eb12c719217fa!2sRETAW%20Solutions!5e0!3m2!1sen!2slk!4v1731317222453!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
