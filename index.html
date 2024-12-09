@@ -266,11 +266,12 @@
     }
   }
 }
+
+
   </style>
   
 
   <!-- Hero Area End -->
-
    <!-- About Area Start -->
   <section class="about" id="about">
     <div class="container">
@@ -291,13 +292,14 @@
               <div class="icon">
                 <img src="https://img.icons8.com/glyph-neue/100/00a1db/user-engagement-male.png" alt="work"/>
               </div>
-              <h4 class="title">Customer Engagement</h4>
+              <h4 class="title" style="">Customer Engagement</h4>
               <p class="text">
                 Our hotline and feedback channels ensure every customer is heard, and every service is improved to meet high standards.
               </p>
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 d-flex align-items-stretch">
           <div class="box">
             <div class="inner-box">
@@ -305,7 +307,7 @@
                 <img src=" https://img.icons8.com/glyph-neue/100/00a1db/installing-updates--v1.png" width="100px" alt="work"/>
                
               </div>
-              <h4 class="title">System Installation </h4>
+              <h4 class="title" >System Installation </h4>
               <p class="text">
                 Professional setup of water purification systems tailored to each household, ensuring perfect functionality and optimal water quality.
               </p>
@@ -419,7 +421,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8">
-          <div class="section-title" id="newproduct">
+          <div class="section-title" >
             <h2 class="title">Introducing S1</h2>
             <p>
               Discover the S1 RO Purifier, our latest innovation, combining advanced filtration and high capacity for pure, safe water every day.
@@ -430,15 +432,8 @@
       <div class="row justify-content-center">
         <div class="col-md-10">
           <div class="deal-slider-area">
-              <div class="deal-slider">
-                 
-                  <div class="item">
-                      <div class="content" style="background-color:black; display: flex; align-items: center; justify-content: center; height: 350px; border: none;">
-                          <div class="video-wrapper">
-                              <i class="fas fa-play" style="font-size: 80px; color: white; cursor: pointer;"></i>
-                          </div>
-                      </div>
-                  </div>
+              <div class="deal-slider" >
+
               </div>
           </div>
         </div>
@@ -572,361 +567,375 @@
     </div>
 </section>
 
+  <style>
+      .product-card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          text-align: center;
+      }
 
-  <!-- Service Area End -->
+      .product-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      }
 
-  <!-- Deal Of the Week Start -->
->
+      .product-img img {
+          width:95%; /* Adjust this percentage as needed */
+          max-width: 150px; /* You can also set a max width in pixels */
+          height: auto;
+          border-radius: 8px;
+          margin: 0 auto;
+      }
 
+      .product-title {
+          font-size: 1.2rem;
+          color: #333;
+          margin-top: 15px;
+      }
 
+      .price {
+          font-size: 1rem;
+          color: #444;
+          margin-top: 10px;
+      }
 
-<style>
-  .product-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
+      .new-price {
+          color: #333;
+          font-weight: bold;
+      }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
+      del {
+          color: #888;
+          font-size: 0.9rem;
+      }
 
-.product-img img {
-    width:95%; /* Adjust this percentage as needed */
-    max-width: 150px; /* You can also set a max width in pixels */
-    height: auto;
-    border-radius: 8px;
-    margin: 0 auto;
-}
+      .buy-btn {
+          display: inline-block;
+          margin-top: 15px;
+          padding: 10px 20px;
+          font-size: 0.9rem;
+          background-color: #007bff;
+          color: #fff;
+          border-radius: 4px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+      }
 
-.product-title {
-    font-size: 1.2rem;
-    color: #333;
-    margin-top: 15px;
-}
+      .buy-btn:hover {
+          background-color: #0056b3;
+      }
 
-.price {
-    font-size: 1rem;
-    color: #444;
-    margin-top: 10px;
-}
+      .single-product {
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          text-align: center;
+          transition: 0.3s;
+          height:450px;
+      }
 
-.new-price {
-    color: #333;
-    font-weight: bold;
-}
+      .product-img img {
+          width: 90%; /* Reduced image size */
+          max-width: 140px;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 15px; /* Space between image and details */
+      }
 
-del {
-    color: #888;
-    font-size: 0.9rem;
-}
+      .title {
+          font-size: 1.2em;
+          margin-bottom: 10px;
+      }
 
-.buy-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+      .price {
+          font-size: 1em;
+          color: #333;
+          margin-bottom: 10px;
+      }
 
-.buy-btn:hover {
-    background-color: #0056b3;
-}
+      /* Features List */
+      .features-list {
+          color: #888; /* Light gray color for features */
+          font-size: 0.9em;
+          list-style-type: none;
+          padding: 0;
+          margin: 15px 0; /* Spacing between features and Buy Now button */
+      }
 
-.single-product {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: 0.3s;
-}
+      .features-list li {
+          margin: 5px 0;
+      }
 
-.product-img img {
-    width: 80%; /* Reduced image size */
-    max-width: 140px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px; /* Space between image and details */
-}
-
-.title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.price {
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Features List */
-.features-list {
-    color: #888; /* Light gray color for features */
-    font-size: 0.9em;
-    list-style-type: none;
-    padding: 0;
-    margin: 15px 0; /* Spacing between features and Buy Now button */
-}
-
-.features-list li {
-    margin: 5px 0;
-}
-
-.mybtn3 {
-    margin-top: 35px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-}
-</style>
+      .mybtn3 {
+          margin-top: 35px;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border-radius: 5px;
+          text-decoration: none;
+      }
+  </style>
   <!-- Deal Of the Week Start -->
 
- 
 
 
-  <section class="pricing" id="pricing">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-                <div class="section-title text-center">
-                    <h2 class="title">Our Awesome Products</h2>
-                    <p>
-                        Discover our exclusive selection of products, thoughtfully crafted to meet your needs with quality and style.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="product-carousel-wrapper">
-            <button class="carousel-btn left-btn">&lt;</button>
-            <div class="product-carousel">
-                <!-- Product Cards -->
-                <div class="item">
-                    <div class="single-product">
-                        <div class="product-img">
-                            <img src="assets/images/1.png" alt="">
-                        </div>
-                        <div class="content">
-                            <h4 class="title">S1</h4>
-                            <div class="price">
-                                <p class="new-price">$135</p>
-                                <small><del>$193</del></small>
-                            </div>
-                            <ul class="features-list">
-                                <li>Heart Rate Monitoring</li>
-                                <li>GPS Tracking</li>
-                                <li>Water Resistant</li>
-                                <li>Battery Life: 24 hrs</li>
-                            </ul>
-                            <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
-                        </div>
-                    </div>
-                </div>
 
-
-                <div class="item">
-                  <div class="single-product">
-                      <div class="product-img">
-                          <img src="assets/images/2.png" alt="">
-                      </div>
-                      <div class="content">
-                          <h4 class="title">RS1</h4>
-                          <div class="price">
-                              <p class="new-price">$135</p>
-                              <small><del>$193</del></small>
-                          </div>
-                          <ul class="features-list">
-                              <li>Heart Rate Monitoring</li>
-                              <li>GPS Tracking</li>
-                              <li>Water Resistant</li>
-                              <li>Battery Life: 24 hrs</li>
-                          </ul>
-                          <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="item">
-                <div class="single-product">
-                    <div class="product-img">
-                        <img src="assets/images/4.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h4 class="title">Shower Fillter </h4>
-                        <div class="price">
-                            <p class="new-price">$135</p>
-                            <small><del>$193</del></small>
-                        </div>
-                        <ul class="features-list">
-                            <li>Heart Rate Monitoring</li>
-                            <li>GPS Tracking</li>
-                            <li>Water Resistant</li>
-                            <li>Battery Life: 24 hrs</li>
-                        </ul>
-                        <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-              <div class="single-product">
-                  <div class="product-img">
-                      <img src="assets/images/5.png" alt="">
-                  </div>
-                  <div class="content">
-                      <h4 class="title">Shower Filter Massager</h4>
-                      <div class="price">
-                          <p class="new-price">$135</p>
-                          <small><del>$193</del></small>
-                      </div>
-                      <ul class="features-list">
-                          <li>Heart Rate Monitoring</li>
-                          <li>GPS Tracking</li>
-                          <li>Water Resistant</li>
-                          <li>Battery Life: 24 hrs</li>
-                      </ul>
-                      <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+  <section class="pricing" >
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-8">
+                  <div class="section-title text-center">
+                      <h2 class="title" id="newproduct">Our Awesome Products</h2>
+                      <p>
+                          Discover our exclusive selection of products, thoughtfully crafted to meet your needs with quality and style.
+                      </p>
                   </div>
               </div>
           </div>
-          <div class="item">
-            <div class="single-product">
-                <div class="product-img">
-                    <img src="assets/images/6.png" alt="">
-                </div>
-                <div class="content">
-                    <h4 class="title">Hydrogen Water Bottle</h4>
-                    <div class="price">
-                        <p class="new-price">$135</p>
-                        <small><del>$193</del></small>
-                    </div>
-                    <ul class="features-list">
-                        <li>Heart Rate Monitoring</li>
-                        <li>GPS Tracking</li>
-                        <li>Water Resistant</li>
-                        <li>Battery Life: 24 hrs</li>
-                    </ul>
-                    <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
-                </div>
-            </div>
-        </div>
-                <!-- Repeat product cards as needed -->
-            </div>
-            <button class="carousel-btn right-btn">&gt;</button>
-        </div>
-    </div>
-</section>
+          <div class="product-carousel-wrapper">
+              <button class="carousel-btn left-btn">&lt;</button>
+              <div class="product-carousel">
+                  <!-- Product Cards -->
+                  <div class="item">
+                      <div class="single-product">
+                          <div class="product-img">
+                              <img src="assets/images/1.png" style="margin-bottom:35px" alt="">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Water Purifiers</h4>
 
-<style>
-    .product-carousel-wrapper {
-        position: relative;
-        overflow: hidden;
-    }
+                              <ul class="features-list">
+                                  <li>Advance purification</li>
+                                  <li>solution for safe,</li>
+                                  <li>healthy ,and crystal-clear</li>
+                                  <li>drinking water</li>
+                              </ul>
+                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                          </div>
+                      </div>
+                  </div>
 
-    .product-carousel {
-        display: flex;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        padding: 1rem 0;
-        gap: 1rem;
-        cursor: grab;
-    }
+                  <div class="item">
+                      <div class="single-product">
+                          <div class="product-img">
+                              <img src="assets/images/5.png" style="margin-bottom:38px" alt="">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Shower Filters</h4>
 
-    .product-carousel:active {
-        cursor: grabbing;
-    }
+                              <ul class="features-list">
+                                  <li>Protect your skin and hair</li>
+                                  <li>with superior</li>
+                                  <li>Water filtration </li>
+                                  <li>for showers</li>
+                              </ul>
+                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                          </div>
+                      </div>
+                  </div>
 
-    .product-carousel::-webkit-scrollbar {
-        display: none;
-    }
+                  <div class="item">
+                      <div class="single-product">
+                          <div class="product-img">
+                              <img src="assets/images/fouc.png" alt="">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Faucets</h4>
 
-    .item {
-        min-width: 300px;
-        flex: 0 0 auto;
-        transition: transform 0.3s ease;
-    }
+                              <ul class="features-list" style="margin-bottom:33px">
+                                  <li>Stylish and durable</li>
+                                  <li>foucets for evey</li>
+                                  <li>modern home and kitchen </li>
 
-    .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        z-index: 100;
-    }
+                              </ul>
+                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="single-product">
+                          <div class="product-img" style="height:183px">
+                              <img src="assets/images/fillters.jpg" alt="">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Replacement Filters</h4>
 
-    .left-btn {
-        left: 0;
-    }
+                              <ul class="features-list" style="margin-bottom:-1px">
+                                  <li>Long-lasting filters to </li>
+                                  <li>ensure optimal performance</li>
+                                  <li>of your water purification</li>
+                                  <li> system</li>
+                              </ul>
+                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                          </div>
+                      </div>
+                  </div>
 
-    .right-btn {
-        right: 0;
-    }
+                  <div class="item">
+                      <div class="single-product">
+                          <div class="product-img">
+                              <img src="assets/images/spare%20parts.jpg"  style="margin-top:20px; margin-bottom:44px" alt="">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Spare parts</h4>
 
-    .carousel-btn:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-</style>
+                              <ul class="features-list">
+                                  <li>High-quality replacement</li>
+                                  <li>Parts to keep your</li>
+                                  <li>system running</li>
+                                  <li>smoothly</li>
+                              </ul>
+                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                          </div>
+                      </div>
+                  </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.querySelector(".product-carousel");
-    const leftBtn = document.querySelector(".left-btn");
-    const rightBtn = document.querySelector(".right-btn");
-    
-    let isDown = false;
-    let startX;
-    let scrollLeft;
 
-    carousel.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - carousel.offsetLeft;
-        scrollLeft = carousel.scrollLeft;
-        e.preventDefault(); // Prevent default text selection
-    });
 
-    carousel.addEventListener('mouseleave', () => {
-        isDown = false;
-    });
 
-    carousel.addEventListener('mouseup', () => {
-        isDown = false;
-    });
 
-    carousel.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault(); // Prevent default text selection
-        const x = e.pageX - carousel.offsetLeft;
-        const walk = (x - startX) * 2; // The multiplier (2) can be adjusted to control the speed
-        carousel.scrollLeft = scrollLeft - walk;
-    });
+                  <div class="item">
+                      <div class="single-product">
+                          <div class="product-img">
+                              <img src="assets/images/accessories.jpg" alt="">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Accessories</h4>
 
-    leftBtn.addEventListener("click", () => {
-        carousel.scrollBy({ left: -300, behavior: "smooth" });
-    });
+                              <ul class="features-list" style="margin-bottom:29px">
+                                  <li>Enhance functionality</li>
+                                  <li>with essential accessories</li>
+                                  <li>for your water systems</li>
 
-    rightBtn.addEventListener("click", () => {
-        carousel.scrollBy({ left: 300, behavior: "smooth" });
-    });
-});
-</script>
+                              </ul>
+                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                          </div>
+                      </div>
+                  </div>
 
-  
+
+
+
+
+
+                  <!-- Repeat product cards as needed -->
+              </div>
+              <button class="carousel-btn right-btn">&gt;</button>
+          </div>
+      </div>
+  </section>
+
+  <style>
+      .product-carousel-wrapper {
+          position: relative;
+          overflow: hidden;
+      }
+
+      .product-carousel {
+          display: flex;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          padding: 1rem 0;
+          gap: 1rem;
+          cursor: grab;
+      }
+
+      .product-carousel:active {
+          cursor: grabbing;
+      }
+
+      .product-carousel::-webkit-scrollbar {
+          display: none;
+      }
+
+      .item {
+          min-width: 300px;
+          flex: 0 0 auto;
+          transition: transform 0.3s ease;
+      }
+
+      .carousel-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          border: none;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          z-index: 100;
+      }
+
+      .left-btn {
+          left: 0;
+      }
+
+      .right-btn {
+          right: 0;
+      }
+
+      .carousel-btn:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+      }
+  </style>
+
+
+
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const carousel = document.querySelector(".product-carousel");
+          const leftBtn = document.querySelector(".left-btn");
+          const rightBtn = document.querySelector(".right-btn");
+
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+
+          carousel.addEventListener('mousedown', (e) => {
+              isDown = true;
+              startX = e.pageX - carousel.offsetLeft;
+              scrollLeft = carousel.scrollLeft;
+              e.preventDefault(); // Prevent default text selection
+          });
+
+          carousel.addEventListener('mouseleave', () => {
+              isDown = false;
+          });
+
+          carousel.addEventListener('mouseup', () => {
+              isDown = false;
+          });
+
+          carousel.addEventListener('mousemove', (e) => {
+              if (!isDown) return;
+              e.preventDefault(); // Prevent default text selection
+              const x = e.pageX - carousel.offsetLeft;
+              const walk = (x - startX) * 2; // The multiplier (2) can be adjusted to control the speed
+              carousel.scrollLeft = scrollLeft - walk;
+          });
+
+          leftBtn.addEventListener("click", () => {
+              carousel.scrollBy({ left: -300, behavior: "smooth" });
+          });
+
+          rightBtn.addEventListener("click", () => {
+              carousel.scrollBy({ left: 300, behavior: "smooth" });
+          });
+      });
+  </script>
+
+
+
+
+
+
+
+
   <!-- pricing part End -->
 
   <!--  Video Area Start -->
@@ -1368,61 +1377,95 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="row">
         <div class="col-lg-6">
           <div class="contact-form-wrapper">
-            <form id="contact-form" method="POST" action="contact.php">
-              <div class="row">
-                <div class="col-md-12">
-                  <input type="text" class="input-field borderd" name="name" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="email" class="input-field borderd" name="email" id="email" placeholder="Enter Your Email" required>
-                </div>
-                <div class="col-12">
-                  <textarea class="input-field borderd textarea" name="message" rows="3" id="message" placeholder="Write your message here" required></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"> <span>Send Message</span></button>
-                </div>
-              </div>
-            </form>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-            
-            <script>
-              document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const form = event.target;
-                const formData = new FormData(form);
-            
-                fetch('contact.php', {
-                  method: 'POST',
-                  body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                  if (data.status === 'success') {
-                    Swal.fire({
-                      icon: 'success',
-                      title: 'Message Sent',
-                      text: data.message,
-                    });
-                  } else {
-                    Swal.fire({
-                      icon: 'error',
-                      title: 'Oops...',
-                      text: data.message,
-                    });
-                  }
-                })
-                .catch(error => {
-                  Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Something went wrong!',
+              <form id="contact-form" method="POST" action="contact.php">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <input type="text" class="input-field borderd" name="name" id="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="col-md-12">
+                          <input type="email" class="input-field borderd" name="email" id="email" placeholder="Enter Your Email" required>
+                      </div>
+                      <div class="col-12">
+                          <textarea class="input-field borderd textarea" name="message" rows="3" id="message" placeholder="Write your message here" required></textarea>
+                      </div>
+                      <div class="col-12">
+                          <button type="submit" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db">
+                              <span>Send Message</span>
+                          </button>
+                      </div>
+                  </div>
+              </form>
+
+               <style>
+                   @media only screen and (max-width: 768px) {
+                       .contact-form-wrapper {
+                           text-align: center; /* Center-align the form */
+                           margin: 0 auto; /* Center the form horizontally */
+                       }
+                       .contact-form-wrapper .row {
+                           flex-direction: column; /* Stack the elements vertically */
+                       }
+                       .contact-form-wrapper .input-field,
+                       .contact-form-wrapper button {
+                           width: 100%; /* Make inputs and button take full width */
+                           max-width: 400px; /* Optional: set a maximum width */
+                           margin: 10px auto; /* Add margin for spacing */
+                       }
+                       .textarea {
+                           resize: none; /* Disable resizing of textarea for consistency */
+                       }
+                   }
+
+               </style>
+
+              <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+              <script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                      const contactForm = document.getElementById('contact-form');
+
+                      contactForm.addEventListener('submit', function (event) {
+                          event.preventDefault();
+
+                          const formData = new FormData(contactForm);
+
+                          fetch('contact.php', {
+                              method: 'POST',
+                              body: formData,
+                          })
+                              .then(response => response.json())
+                              .then(data => {
+                                  if (data.status === 'success') {
+                                      Swal.fire({
+                                          icon: 'success',
+                                          title: 'Message Sent',
+                                          text: data.message,
+                                      }).then(() => {
+                                          // Disable submit button after success message closes
+                                          contactForm.querySelector('button[type="submit"]').disabled = true;
+                                      });
+                                      contactForm.reset(); // Reset form on success
+                                  } else {
+                                      Swal.fire({
+                                          icon: 'error',
+                                          title: 'Oops...',
+                                          text: data.message,
+                                      });
+                                  }
+                              })
+                              .catch(error => {
+                                  Swal.fire({
+                                      icon: 'error',
+                                      title: 'Oops...',
+                                      text: 'Something went wrong!',
+                                  });
+                                  console.error('Error:', error);
+                              });
+                      });
                   });
-                });
-              });
-            </script>
-            
-              
+              </script>
+
+
+
           </div>
         </div>
         <div class="col-lg-6">

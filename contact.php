@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Recipients
         $mail->setFrom('retawcontacts@gmail.com', 'Website Contact Form'); // Gmail address
-        $mail->addAddress('retawcontacts@gmail.com'); // Recipient email
+        $mail->addAddress('idearigs@gmail.com'); // Recipient email
         $mail->addReplyTo($email, $name); // User's email for reply
 
         // Subject

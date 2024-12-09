@@ -1189,16 +1189,7 @@ select:focus {
   position: relative;
   transition: all 0.3s ease-in;
 }
-.about .box::after {
-  position: absolute;
-  content: "";
-  bottom: 0px;
-  left: 0px;
-  height: 4px;
-  width: 0%;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
-  transition: all 0.3s ease-in;
-}
+
 .about .box .inner-box {
   width: 100%;
   position: relative;
@@ -1210,7 +1201,7 @@ select:focus {
   font-size: 55px;
 }
 .about .box .inner-box .icon i {
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in;
@@ -1255,7 +1246,7 @@ select:focus {
   display: block;
 }
 .whaybest .info .info-title span {
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1571,7 +1562,7 @@ select:focus {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.06);
 }
 .dealofweek .deal-slider-area .content .left-area {
-  text-align: center; 
+  text-align: center;
   padding: 0px 50px;
 }
 .dealofweek .deal-slider-area .content .right-area {
@@ -1719,7 +1710,7 @@ select:focus {
   font-size: 26px;
   line-height: 36px;
   font-weight: 700;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 7px;
@@ -1757,10 +1748,7 @@ select:focus {
   background: rgba(2, 80, 197, 0.05);
   color: #242424;
 }
-.pricing .product-slider .owl-controls .owl-nav div:hover {
-  background: #0250c5;
-  color: #fff;
-}
+
 
 /*-----------------------------
 ** Pricing Area Start
@@ -1861,7 +1849,7 @@ select:focus {
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   transform: rotate(85deg);
 }
 .testimonial-area .testimonial-slider .client .client-image img {
@@ -1950,7 +1938,7 @@ select:focus {
   left: 0;
   height: 100%;
   width: 4px;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
 }
 .faq .accordion .panel .panel-body {
   padding: 4px 20px 7px;
@@ -2182,7 +2170,7 @@ select:focus {
   color: #fff;
   font-size: 16px;
   padding: 0px 25px;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   transition: all 0.3s ease-in;
 }
 .subscribe-section .newsletter-form-area button c span {
@@ -2384,9 +2372,16 @@ select:focus {
   color: #fff;
   border-radius: 50%;
   background: #fff;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
+
+.box:hover {
+  background-color: transparent; /* Ensure no background change on hover */
+}
+
+
+
 .twitter-widget .owl-controls .owl-nav div.owl-prev {
   margin-left: 0px;
 }
@@ -2404,7 +2399,7 @@ select:focus {
   color: #fff;
   border-radius: 50%;
   background: #fff;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -2505,9 +2500,7 @@ select:focus {
   font-weight: 600;
   transition: all 0.3s ease-in;
 }
-.single-blog .content .title:hover {
-  color: #0250c5;
-}
+
 .single-blog:hover .img::after {
   opacity: 1;
 }
@@ -3022,7 +3015,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+
   border-radius: 0px 0px 300px 0px;
 }
 .home5 .hero-area .shape {
@@ -3045,7 +3038,7 @@ select:focus {
 }
 .home5 .hero-area .discount-circle-inner {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+
 }
 .home5 .about {
   position: relative;
@@ -3058,13 +3051,13 @@ select:focus {
 }
 .home5 .about .box .inner-box .icon i {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .home5 .about .box::after {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+
   opacity: 1;
   width: 100%;
   height: 0%;
@@ -3083,12 +3076,7 @@ select:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.home5 .about .box:hover .title {
-  color: #fff;
-}
-.home5 .about .box:hover .text {
-  color: #fff;
-}
+
 .home5 .whaybest {
   position: relative;
   background: none;
@@ -3413,7 +3401,7 @@ select:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   opacity: 0.9;
 }
 @keyframes sclanmi3 {
@@ -3428,7 +3416,7 @@ select:focus {
   }
 }
 .home7 .hero-area .discount-circle-inner {
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
 }
 .home7 .about {
   position: relative;
@@ -3440,10 +3428,10 @@ select:focus {
   border-radius: 30px 0px 30px 0px;
 }
 .home7 .about .box .inner-box .icon i {
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
 }
 .home7 .about .box::after {
-  background-image: linear-gradient(55deg, #0250c5 0%, #d43f8d 100%);
+
   opacity: 1;
   width: 100%;
   height: 0%;
@@ -3801,12 +3789,8 @@ select:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.home9 .about .box:hover .title {
-  color: #fff;
-}
-.home9 .about .box:hover .text {
-  color: #fff;
-}
+
+
 .home9 .whaybest {
   position: relative;
 }
