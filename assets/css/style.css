@@ -3766,7 +3766,7 @@ select:focus {
   margin-bottom: 30px;
   background: #fff;
   box-shadow: 0px 30px 20px 0px rgba(0, 37, 93, 0.15);
-  border-radius: 15px;
+  border-radius: 6px;
 }
 .home9 .about .box .inner-box .icon i {
   background: #00a1db;
@@ -4042,3 +4042,10 @@ select:focus {
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+
+
+
+
+

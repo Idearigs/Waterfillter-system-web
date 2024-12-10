@@ -82,8 +82,7 @@
     </div>
   </header>
   <div id="home" class="hero-area" style="padding-top: 150px;">
-                 
-    <img class="shape" src="assets/images/bg-shape.png" alt="">
+      <img class="shape" src="assets/images/bg-shape.png" alt="">
     <div class="container">
       <div class="row justify-content-center">
         <!-- Left Content -->
@@ -112,24 +111,24 @@
       </div>
     </div>
   </div>
-  
+
   <style>
   /* General Desktop Styles */
   .hero-area {
     padding: 50px 20px;
     background-color: #f9f9f9;
   }
-  
+
   .title {
     font-size: 2rem;
     font-weight: bold;
   }
-  
+
   .subtitle {
     font-size: 1rem;
     line-height: 1.5;
   }
-  
+
   .mybtn3 {
     display: inline-block;
     padding: 12px 24px;
@@ -140,11 +139,11 @@
     border-radius: 5px;
     text-decoration: none;
   }
-  
+
   .mybtn3:hover {
     background-color: #0056b3;
   }
-  
+
   .product-wrapper {
   position: relative;
   display: flex;
@@ -172,7 +171,7 @@
   filter: blur(8px); /* Softer blur */
   animation: shadow-resize 3s infinite ease-in-out;
 }
-  
+
   /* Animations */
   @keyframes bounce-shadow {
     0%, 100% {
@@ -182,7 +181,7 @@
       transform: translateY(-15px); /* Bounce upwards */
     }
   }
-  
+
   @keyframes shadow-resize {
     0%, 100% {
       width: 150px;
@@ -195,18 +194,18 @@
       filter: blur(15px);
     }
   }
-  
+
   /* Desktop Adjustments */
   @media (min-width: 992px) {
     .left-content {
       margin-right: 50px; /* Add space between text and image */
     }
-  
+
     .product-wrapper {
       margin-left: 50px; /* Add space between text and image */
     }
   }
-  
+
   /* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
   .hero-area {
@@ -267,13 +266,128 @@
   }
 }
 
+  .stats-section {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #ffffff;
+  }
+
+  .section-title1 {
+      color: #e74c3c;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+  }
+
+  .subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 2rem;
+  }
+
+  .stats-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+  }
+
+  .stat-item {
+      text-align: center;
+      flex: 1 1 calc(50% - 1rem);
+      max-width: 200px;
+  }
+
+  .stat-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+  }
+
+  .stat-title {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+  }
+
+  .stat-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #76ba1b;
+  }
+
+  @media (min-width: 768px) {
+      .stats-container {
+          justify-content: space-evenly;
+      }
+
+      .stat-item {
+          flex: 1 1 calc(25% - 1rem);
+      }
+  }
+
 
   </style>
-  
+
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const counters = document.querySelectorAll(".stat-number");
+
+          counters.forEach(counter => {
+              counter.innerText = "0";
+
+              const updateCounter = () => {
+                  const target = +counter.getAttribute("data-target");
+                  const current = +counter.innerText;
+
+                  const increment = target / 100;
+
+                  if (current < target) {
+                      counter.innerText = Math.ceil(current + increment);
+                      setTimeout(updateCounter, 20);
+                  } else {
+                      counter.innerText = target;
+                  }
+              };
+
+              updateCounter();
+          });
+      });
+
+  </script>
+
+
+
+  <section class="stats-section">
+      <h2 class="title" style="font-size:40px">Our Impact</h2>
+      <p class="subtitle" style="font-size:17px;">Committed to Providing Clean and Safe Water Across the Maldives</p>
+      <div class="stats-container" style="margin-top:20px">
+          <div class="stat-item">
+              <img src="https://img.icons8.com/ios-filled/100/00a1db/handshake-heart.png" alt="Trusted Customers Icon" class="stat-icon">
+              <h3 class="stat-title">TRUSTED </h3>
+              <p class="stat-number" data-target="4000">0</p>
+              <span class="extra-text">+ Customers</span>
+          </div>
+          <div class="stat-item">
+              <img src="https://img.icons8.com/glyph-neue/128/00a1db/island-on-water.png" alt="Coverage Icon" class="stat-icon">
+              <h3 class="stat-title">COVERAGE</h3>
+              <p class="stat-number" data-target="70">0</p>
+              <span class="extra-text">+ Islands</span>
+          </div>
+          <div class="stat-item">
+              <img src="https://img.icons8.com/ios-filled/100/00a1db/conference-call.png" alt="Regional Partners Icon" class="stat-icon">
+              <h3 class="stat-title">REGIONAL PARTNERS</h3>
+              <p class="stat-number" data-target="12">0</p>
+              <span class="extra-text">Islands</span>
+          </div>
+      </div>
+  </section>
+
 
   <!-- Hero Area End -->
    <!-- About Area Start -->
   <section class="about" id="about">
+
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8">
@@ -285,7 +399,7 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center"">
         <div class="col-lg-4 d-flex align-items-stretch">
           <div class="box">
             <div class="inner-box">
@@ -376,8 +490,7 @@
 
  <!-- We are best Area Start -->
  <section class="whaybest">
-  <img class="shape" src="assets/images/bg-shape.png" alt="">
-  <img class="shape2" src="assets/images/bg-shape2.png" alt="">
+
   <div class="container">
     <div class="row row-one" style="margin-top:50px; ">
       <div class="col-lg-6 d-flex">
@@ -714,7 +827,7 @@
                                   <li>healthy ,and crystal-clear</li>
                                   <li>drinking water</li>
                               </ul>
-                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                              <a href="#contactfrm" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
                           </div>
                       </div>
                   </div>
@@ -733,7 +846,7 @@
                                   <li>Water filtration </li>
                                   <li>for showers</li>
                               </ul>
-                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                              <a href="#contactfrm" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
                           </div>
                       </div>
                   </div>
@@ -752,7 +865,7 @@
                                   <li>modern home and kitchen </li>
 
                               </ul>
-                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                              <a href="#contactfrm" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
                           </div>
                       </div>
                   </div>
@@ -770,7 +883,7 @@
                                   <li>of your water purification</li>
                                   <li> system</li>
                               </ul>
-                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                              <a href="#contactfrm" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
                           </div>
                       </div>
                   </div>
@@ -789,7 +902,7 @@
                                   <li>system running</li>
                                   <li>smoothly</li>
                               </ul>
-                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                              <a href="#contactfrm" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
                           </div>
                       </div>
                   </div>
@@ -812,7 +925,7 @@
                                   <li>for your water systems</li>
 
                               </ul>
-                              <a href="#contact" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
+                              <a href="#contactfrm" class="mybtn3 mybtn-bg" style="background-color:#00a1db; border-color:#00a1db"><span>Contact Now</span></a>
                           </div>
                       </div>
                   </div>
@@ -1374,9 +1487,9 @@
         </div>
       </div>
       
-      <div class="row">
+      <div class="row" id="contactfrm">
         <div class="col-lg-6">
-          <div class="contact-form-wrapper">
+          <div class="contact-form-wrapper" >
               <form id="contact-form" method="POST" action="contact.php">
                   <div class="row">
                       <div class="col-md-12">
