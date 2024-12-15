@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f7e48ab-f776-4352-9ea8-c73b7bd5742a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/s1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/s1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,8 @@
       <workItem from="1733665328536" duration="4611000" />
       <workItem from="1733738245419" duration="20087000" />
       <workItem from="1733773385490" duration="32000" />
-      <workItem from="1733812191753" duration="6424000" />
+      <workItem from="1733812191753" duration="7219000" />
+      <workItem from="1734243986747" duration="11257000" />
     </task>
     <servers />
   </component>
