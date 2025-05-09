@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Handle dashboard routes
+RewriteRule ^dashboard$ dashboard/login.php [L]
+RewriteRule ^dashboard/$ dashboard/login.php [L]
+
+# Handle partners route
+RewriteRule ^partners$ partners.php [L]
+RewriteRule ^partners/$ partners.php [L]
+
+# Add more custom routes as needed
+# RewriteRule ^route-name$ target-file.php [L]
+
+# If the file exists, serve it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]
